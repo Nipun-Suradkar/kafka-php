@@ -121,7 +121,7 @@ class SocketSync
      * @param int $sendTimeoutSec
      * @param int $sendTimeoutUsec
      */
-    public function __construct($host, $port, $recvTimeoutSec = 0, $recvTimeoutUsec = 750000, $sendTimeoutSec = 0, $sendTimeoutUsec = 100000)
+    public function __construct($host, $port, $recvTimeoutSec = 0, $recvTimeoutUsec = 750000, $sendTimeoutSec = 0, $sendTimeoutUsec = 1000000)
     {
         $this->host = $host;
         $this->port = $port;
